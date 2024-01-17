@@ -19,8 +19,74 @@
 body {
   font-family: var(--josefin);
   font-size: 16px;
+  background-image: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
 }
 
-header {
-  margin: 50px;
+header img{
+  margin: 30px;
+  width: 100px;
+}
+
+main {
+  width: 375px;
+  text-align: center;
+}
+
+.content {
+  padding: 0px 15px;
+}
+
+.content h1 {
+  font-size: 43px;
+  font-weight: 300;
+  letter-spacing: 10px;
+  color: var(--desatRed);
+  margin-top: 50px;
+  margin-bottom: 20px; 
+}
+
+.content h1 strong {
+  font-weight: 600;
+  color: var(--grayishRed);
+}
+
+.content p {
+  color: var(--desatRed);
+  font-weight: 400;
+  line-height: 25px;
+}
+
+form {
+  margin-top: 30px;
+  border: 2px solid var(--desatRed);
+  display: grid;
+  grid-template-columns: 83% 17%;
+  border-radius: 30px;
+  overflow: hidden;
+  
+}
+
+#iemail {
+  padding: 15px;
+  border: none;
+  border-radius: 30px;
+  width: 100%;
+}
+
+#submit {
+  padding: 15px;
+  background: url("../images/icon-arrow.svg"), linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+  border-radius: 30px;
+ transition: 1s;
+}
+
+#submit:hover {
+  cursor: pointer;
+  background: url("../images/icon-arrow.svg"), linear-gradient(135deg, rgb(250, 218, 219), rgb(249, 201, 201));
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: .8s;
 }
