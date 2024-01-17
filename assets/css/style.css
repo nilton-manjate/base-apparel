@@ -88,7 +88,7 @@ form {
   background-position: center;
   border: none;
   border-radius: 30px;
- transition: 1s;
+  transition: 1s;
 }
 
 #submit:hover {
@@ -97,4 +97,53 @@ form {
   background-repeat: no-repeat;
   background-position: center;
   transition: .8s;
+}
+
+.photoDesktop {
+  display: none;
+}
+
+@media only screen and (min-width: 600px) {
+  header img, .content, .content h1, form { margin: 0; padding: 0 }
+
+  .photoMobile {
+    display: none;
+  }
+
+  body {
+    background: url("../images/bg-pattern-desktop.svg"), linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: grid;
+    grid-template-columns: 60% 40%;
+  }
+
+  .photoDesktop {
+    display: block;
+    grid-area: 1 / 2 / 3 / 3;
+  }
+
+  
+  header, .content  {
+    margin-left: 100px;
+    margin-right: 150px;
+  }
+
+  header {
+    margin-top: -250px;
+  }
+
+  .content {
+    margin-top: -400px;
+    width: 430px;
+    text-align: left;
+  }
+
+  .content h1 {
+    margin-bottom: 30px;
+  } 
+
+  .content p {
+    margin-bottom: 50px;
+  }
 }
