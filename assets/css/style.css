@@ -103,7 +103,7 @@ form {
   display: none;
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 900px) {
   header img, .content, .content h1, form { margin: 0; padding: 0 }
 
   .photoMobile {
@@ -130,11 +130,11 @@ form {
   }
 
   header {
-    margin-top: -250px;
+    margin-top: -200px;
   }
 
   .content {
-    margin-top: -400px;
+    margin-top: -350px;
     width: 430px;
     text-align: left;
   }
