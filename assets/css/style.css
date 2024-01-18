@@ -71,11 +71,12 @@ form {
   grid-template-columns: 83% 17%;
   border-radius: 30px;
   overflow: hidden;
-  
+  position: relative;
 }
 
 #iemail {
   padding: 15px;
+  padding-left: 30px;
   border: none;
   border-radius: 30px;
   width: 100%;
@@ -97,6 +98,23 @@ form {
   background-repeat: no-repeat;
   background-position: center;
   transition: .8s;
+}
+
+#error {
+  position: absolute;
+  right: 20%;
+  top: 25%;
+  display: none;
+}
+
+span {
+  color: rgb(249, 100, 100);
+  display: block;
+  text-align: left;
+  font-size: 14px;
+  margin-left: 30px;
+  margin-top: 10px;
+  display: none;
 }
 
 .photoDesktop {
